@@ -4,84 +4,52 @@
   box-sizing: border-box;
 }
 
+p {
+  font-size: 24px;
+}
+
 body {
-  min-height: 100vh;
-  /* display: flex; */
-  /* justify-content: space-around; */
-  margin: 0;
-  padding: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+  background-image: url(https://images.unsplash.com/photo-1581642087552-f408e81c9287?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
 }
 
-/* .pokemon {
-  border: 1px sold black;
-} */
-
-ul {
-  list-style: none;
+.wrapper {
+  display: flex;
+  justify-content: center;
 }
 
-/* .gallery {
-  width: 90%;
-  margin: 0 auto;
+.container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-} */
-
-/* .gallery > li {
-  width: 150px;
-  height: 300px;
-  border: 1px solid black;
-  overflow: hidden;
-} */
-
-.list {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.person {
-  margin: 5px;
-  width: 300px;
-  height: 100px;
-  display: flex;
-  border: 1px solid rgb(69, 94, 0);
+input {
+  display: block;
+  margin: 50px auto;
+  width: 400px;
+  height: 50px;
+  outline: none;
+  font-size: 32px;
+  text-align: center;
   border-radius: 5px;
 }
 
 .picture {
-  height: 100%;
-  width: auto;
-  display: block;
-  border-radius: 5px;
+  width: 320px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.651);
+  cursor: pointer;
 }
 
-.inform {
-  margin-left: 20px;
+.picture:hover {
+  transform: scale(1.5);
 }
 
-.modal {
-  background-color: rgb(51, 78, 167);
-  width: 800px;
-  height: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  overflow: hidden;
-  justify-content: space-around;
-  border-radius: 50px;
-  color: aliceblue;
-  box-shadow: 0px 7px 15px black;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
+.list {
+  font-size: 20px;
+  margin-right: 20px;
 }
